@@ -6,9 +6,9 @@ COPY go.mod go.sum ./
 RUN go mod download && go mod verify
 COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build \
-    -ldflags="-s -w -X main.version=$(git describe --tags --always)" \
+    -ldflags="-s -w" \
     -trimpath \
-    -o lunaria-backend ./cmd/server
+    -o lunaria-backend ./cmd
 
 FROM scratch
 WORKDIR /app
@@ -25,7 +25,4 @@ EXPOSE 6060
 
 ENV GIN_MODE=release
 
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-    CMD ["/app/lunaria-backend", "healthcheck"]
-
-CMD ["./lunaria-backend"]
+CMD ["./lunaria-backend", "server"]
