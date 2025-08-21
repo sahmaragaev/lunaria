@@ -1,0 +1,258 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+nova-payment
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.html
+coverage.xml
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Build output
+build/
+dist/
+bin/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+
+# Configuration files with secrets
+config.yaml
+config.local.yaml
+config.dev.yaml
+config.prod.yaml
+config.staging.yaml
+*-local.yaml
+*-dev.yaml
+*-prod.yaml
+*-staging.yaml
+
+# Certificates and keys (keep structure, ignore actual certs)
+certs/*.p12
+certs/*.crt
+certs/*.key
+certs/*.pem
+certs/*.cer
+certs/*.pfx
+*.p12
+*.crt
+*.key
+*.pem
+*.cer
+*.pfx
+
+# Logs
+logs/
+*.log
+*.log.*
+log/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+dump.sql
+dump/
+
+# MongoDB dumps
+mongo-data/
+mongodb-data/
+
+# Redis dumps
+dump.rdb
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Test coverage
+profile.cov
+coverage.txt
+
+# Go sum database
+go.sum.backup
+
+# Air (live reload tool)
+.air.toml
+tmp/
+
+# Docker
+.dockerignore.bak
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Local development
+local/
+.local/
+
+# Node modules (if any frontend components)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if any Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Tags
+TAGS
+tags
+.tags
+
+# Ctags
+.TAGS
+!TAGS/
+
+# Performance logs
+yarn-error.log
+npm-debug.log
+
+# Runtime configuration
+.runtime
+
+# Local scripts
+local_*.sh
+dev_*.sh
+personal_*.sh
+
+# Generated documentation
+docs/generated/
+api-docs/
+swagger.json
+swagger.yaml
+
+# Migration outputs
+migrations/*.sql.executed
+migrations/applied/
+
+# Helm charts (if using Kubernetes)
+charts/*.tgz
+
+# Terraform (if using for infrastructure)
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Ansible (if using for deployment)
+*.retry
+
+# Local testing
+test-results/
+.nyc_output/
+
+# Generated protobuf files
+*.pb.go
+
+# Wire generated files
+wire_gen.go
+
+# Mock generated files
+*_mock.go
+mocks/
+
+# Kubernetes manifests with secrets
+k8s/*-secret.yaml
+k8s/*-secret.yml
+
+# CI/CD secrets
+.github/secrets/
+.gitlab-ci-secrets/
+
+# Local development database
+*.db-journal
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# Local configuration overrides
+override.yaml
+override.yml
+local.yaml
+local.yml
